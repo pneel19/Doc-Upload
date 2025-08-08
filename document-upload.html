@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Index - Dashboard</title>
+    <link href="css/style.min.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg border-bottom top-nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="group"
+                        src="data:image/svg+xml;base64, PHN2ZyB3aWR0aD0iMTMzIiBoZWlnaHQ9IjQwIiB2aWV3Qm94PSIwIDAgMTMzIDQwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMzYuMjIzNiAwSDE3LjIzNDVDMTQuNjA0NCAwIDEyLjA0NDQgMS4xMzI5MyAxMC42MjQxIDIuNTYzMjlDOS4zOTc2MSAzLjc5NjQ3IDUuMzc3MjIgOC4wMzQwOSAyLjYxMzQyIDEwLjg5NDhDMC45MDkwMTUgMTIuNjYyNyAwIDE0LjY4NDYgMCAxNy40NTUxVjM2Ljk5ODlDMCAzOC42NTY1IDEuMzQzNDcgNDAgMy4wMDEwOSA0MEgyMS45M0MyNC4yMTI2IDQwIDI3LjE3NjkgMzguODU3IDI4LjU2NzEgMzcuNDcwMUMyOS44MDAzIDM2LjI0MDMgMzMuODc0MiAzMS45NzU5IDM2LjYyNDYgMjkuMDk4NUMzOC4wMzgzIDI3LjYxNDcgMzkuMjI4IDI1LjY3NjMgMzkuMjI4IDIyLjUyODJWMy4wMDQ0M0MzOS4yMjggMS4zNDM0NyAzNy44ODQ1IDAgMzYuMjIzNiAwWiIgZmlsbD0iI0ZGQ0IzMSIvPgo8cGF0aCBkPSJNNTQuNTMwOSAzMS43ODU2VjMxLjY5MkM1NS4xNzU5IDMxLjU4NTEgNTUuNjkwNiAzMS4yNjQyIDU2LjA4MTYgMzAuNzM2MkM1Ni40NjkzIDMwLjIwNDggNTYuNjYzMSAyOS41MjY0IDU2LjY2MzEgMjguNjk3NkM1Ni42NjMxIDI3LjQ3NzggNTYuMjE4NiAyNi41ODg4IDU1LjMzMyAyNi4wMzA3QzU0LjQ0NCAyNS40NzI2IDUzLjAyMDQgMjUuMTkxOSA1MS4wNTUzIDI1LjE5MTlINDYuNzQ0MVYzNi43MzVDNDYuNzU3NSAzNy45OTgzIDQ3Ljc3MzUgMzkuMDE3NiA0OS4wMzM0IDM5LjA0NDNINTEuOTI3NUM1My40OTQ5IDM5LjA0NDMgNTQuNzM0OCAzOC42OTAxIDU1LjY0NzEgMzcuOTgxNkM1Ni41NTk1IDM3LjI3MzEgNTcuMDE3MyAzNi4yODcyIDU3LjAxNzMgMzUuMDI0QzU3LjAxNzMgMzQuMTMxNyA1Ni44MjM1IDMzLjQxOTggNTYuNDM1OCAzMi44ODE4QzU2LjA0ODIgMzIuMzQzNyA1NS40MTMyIDMxLjk3OTQgNTQuNTM3NiAzMS43ODIzTDU0LjUzMDkgMzEuNzg1NlpNNDkuNjc4NCAyNy41OTgxSDUxLjIyMjRDNTIuMDYxMiAyNy41OTgxIDUyLjY3NjEgMjcuNzExNyA1My4wNjM4IDI3Ljk0MjNDNTMuNDUxNSAyOC4xNzI5IDUzLjY0NTMgMjguNTUzOSA1My42NDUzIDI5LjA4NTNDNTMuNjQ1MyAyOS42NTM0IDUzLjQ2ODIgMzAuMDYxMSA1My4xMTA2IDMwLjMwODRDNTIuNzUzIDMwLjU1NTggNTIuMTc4MiAzMC42Nzk0IDUxLjM4MjggMzAuNjc5NEg0OS42Nzg0VjI3LjYwMTVWMjcuNTk4MVpNNTMuMzg0NiAzNi4xNTM1QzUzLjAwMDMgMzYuNDY0MyA1Mi40MDIxIDM2LjYxODEgNTEuNTkzMyAzNi42MTgxSDQ5LjY3ODRWMzMuMDA4OEg1MS40OTY0QzUzLjEzNzMgMzMuMDA4OCA1My45NTk1IDMzLjU4MzYgNTMuOTU5NSAzNC43MzMyQzUzLjk1OTUgMzUuMzcxNSA1My43NjU2IDM1Ljg0NjEgNTMuMzgxMyAzNi4xNTM1SDUzLjM4NDZaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNODcuMDU4MyAzMy4wNDUyTDkxLjI2NTkgMjguNDVIODguMDA3NEw4NS4wMzk4IDMxLjY3MTdMODMuNzc5OSAzMy4yODI1SDgzLjc0MzFMODMuODkzNSAzMC44NzYzVjI0LjI5OTNIODEuMDAyN1YzOS4wNDQxSDgzLjg5MzVWMzUuNzQ1Nkw4NS4xMzM0IDM0Ljc0OTZMODYuNzI0MSAzNi45ODg4TDg3LjQzNiAzOC4wMDE0TDg3LjQ0NiAzNy45OTQ3Qzg3Ljg1NzEgMzguNjEzIDg4LjU1MjIgMzkuMDI0IDg5LjM0NzYgMzkuMDQwN0g5MS41MTk5TDg3LjA1NSAzMy4wNDE5TDg3LjA1ODMgMzMuMDQ1MloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik03OC4xNzU1IDI5LjI4MjVDNzcuNTQwNiAyOC42MTc1IDc2LjYwODIgMjguMjg2NiA3NS4zNzgzIDI4LjI4NjZDNzQuNjU5OCAyOC4yODY2IDc0LjAxODEgMjguNDE3IDczLjQ1NjcgMjguNjc3NkM3Mi45NTg3IDI4LjkwODIgNzIuNTYxIDI5LjI0MjQgNzIuMjUwMiAyOS42NzAyVjI4LjQ4MzhINjkuMzcyOFYzMi45NTUzSDY5LjM3OTVWMzkuMDQ3OEg3Mi4yNjAzVjM0LjA3ODNDNzIuMjYwMyAzMi44MzE3IDcyLjQ0MDcgMzEuOTM5NCA3Mi43OTgzIDMxLjQwMTNDNzMuMTU1OSAzMC44NjMzIDczLjc0MDggMzAuNTkyNiA3NC41NDYyIDMwLjU5MjZDNzUuMTM3NyAzMC41OTI2IDc1LjU2ODggMzAuNzgzMSA3NS44Mzk1IDMxLjE2NDFDNzYuMTEwMiAzMS41NDUgNzYuMjQ3MiAzMi4xMTY1IDc2LjI0NzIgMzIuODc4NVYzOS4wNDc4SDc5LjEyOFYzMi4xNkM3OS4xMjggMzAuOTA2NyA3OC44MTA1IDI5Ljk0NzYgNzguMTcyMiAyOS4yODI1SDc4LjE3NTVaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNjYuMzIxNCAyOS4wMDE0QzY1LjU2NjEgMjguMzgzMSA2NC40Nzk5IDI4LjA3NTcgNjMuMDYyOSAyOC4wNzU3QzYxLjY0NTkgMjguMDc1NyA2MC40NDk1IDI4LjM0OTcgNTkuMzA5OSAyOC44OTExTDU5Ljk4NSAzMC45NzMyQzYxLjEyMTMgMzAuNDY1MiA2Mi4xMDcxIDMwLjIxMTIgNjIuOTQ5MyAzMC4yMTEyQzY0LjA0NTUgMzAuMjExMiA2NC41OTM2IDMwLjc0NTkgNjQuNTkzNiAzMS44MTg3VjMyLjI4MzJMNjIuNzYyMiAzMi4zNEM2MS4xODE0IDMyLjM5NjggNTkuOTk4NCAzMi42OTA5IDU5LjIxMyAzMy4yMjIzQzU4LjQyNzYgMzMuNzUzNyA1OC4wMzY2IDM0LjU4MjUgNTguMDM2NiAzNS43MDIxQzU4LjAzNjYgMzYuODIxNiA1OC4zMjc0IDM3LjU5NjkgNTguOTA4OSAzOC4xNzg0QzU5LjQ5MDQgMzguNzU2NiA2MC4yODkxIDM5LjA0NzQgNjEuMzA1MSAzOS4wNDc0QzYyLjEzMDUgMzkuMDQ3NCA2Mi43OTg5IDM4LjkzMDQgNjMuMzEzNiAzOC42OTMxQzYzLjc0NDcgMzguNDk1OSA2NC4xNjU4IDM4LjE1NTEgNjQuNTc2OCAzNy42OTM5VjM4Ljg1NjlINjcuNDU3NlYzMS44MTg3QzY3LjQ1NzYgMzAuNTU4OCA2Ny4wOCAyOS42MTk3IDY2LjMyNDcgMjkuMDA0N0w2Ni4zMjE0IDI5LjAwMTRaTTY0LjU5MzYgMzQuMTY4MUg2NC41NzY4VjM1LjA0MzdDNjQuNTM2NyAzNS41Nzg0IDY0LjM0NjMgMzYuMDE5NSA2My45OTUzIDM2LjM2MDRDNjMuNTk0MyAzNi43NDQ3IDYzLjA2MjkgMzYuOTM1MiA2Mi4zOTQ1IDM2LjkzNTJDNjEuNDYyMSAzNi45MzUyIDYwLjk5NzYgMzYuNTI3NSA2MC45OTc2IDM1LjcxNTRDNjAuOTk3NiAzNS4xNDczIDYxLjIwMTUgMzQuNzI2MiA2MS42MTI1IDM0LjQ0ODhDNjIuMDIzNiAzNC4xNzE0IDYyLjY0NTIgMzQuMDIxIDYzLjQ4NCAzMy45OTQzTDY0LjYwMDIgMzMuOTU3NVYzNC4xNjQ3TDY0LjU5MzYgMzQuMTY4MVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMTUuNTAyIDcuNDk5MjNDMTE0LjggNi41NTM0NSAxMTMuODQxIDYuMDgyMjQgMTEyLjYwNCA2LjA4MjI0QzExMS45MzkgNi4wODIyNCAxMTEuMzY0IDYuMjA5MjMgMTEwLjg1NiA2LjQ2NjU2QzExMC4zNDUgNi43MzM5MiAxMDkuOTUxIDcuMTE4MjUgMTA5LjY0MyA3LjYxNjJWMy43ODI5NkMxMDkuNjU3IDMuMjQ4MjUgMTA5LjY3IDIuNjk2ODIgMTA5LjY4IDIuMTYyMTFIMTA2Ljc4MlYxNi43MTY0SDEwOS42M1YxNS41M0MxMDkuOTg3IDE1Ljk3NzggMTEwLjM3MiAxNi4zMDg3IDExMC44MTYgMTYuNTM5M0MxMTEuMzE0IDE2Ljc4MzIgMTExLjg4OSAxNi45MTAyIDExMi41NDEgMTYuOTEwMkMxMTMuNzkxIDE2LjkxMDIgMTE0Ljc2MyAxNi40MjU2IDExNS40NzggMTUuNDY2NUMxMTYuMTkzIDE0LjUwNzMgMTE2LjU1MSAxMy4xODA2IDExNi41NTEgMTEuNDY5NUMxMTYuNTUxIDkuNzU4NCAxMTYuMTkzIDguNDU1MDMgMTE1LjUwNSA3LjQ5OTIzSDExNS41MDJaTTExMS42MzUgMTQuNTg0MkMxMTAuODcgMTQuNTg0MiAxMTAuMzA4IDE0LjM0MDIgMTA5Ljk2NCAxMy44NTU3QzEwOS44MjQgMTMuNjY1MiAxMDkuNzIgMTMuNDIxMiAxMDkuNjQ3IDEzLjE0MDVWOS42ODE1M0MxMDkuNzIzIDkuMzY0MDUgMTA5Ljg1IDkuMTIwMDggMTA5Ljk5MSA4LjkyOTU5QzExMC4zMzUgOC41MjE4NyAxMTAuODYgOC4zMDQ2NSAxMTEuNTg1IDguMzA0NjVDMTEyLjMxIDguMzA0NjUgMTEyLjgxMSA4LjU3MiAxMTMuMTQyIDkuMDgzMzJDMTEzLjQ3MyA5LjYwODAxIDExMy42NCAxMC4zODY3IDExMy42NCAxMS40MzI3QzExMy42NCAxMy41MzgyIDExMi45NzUgMTQuNTg3NSAxMTEuNjM1IDE0LjU4NzVWMTQuNTg0MloiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xMzAuNTcxIDE0LjU1MDdDMTI5Ljk5OSAxNC42ODQ0IDEyOS4zOTggMTQuNzUxMiAxMjguNzU2IDE0Ljc1MTJDMTI3LjkzNCAxNC43NTEyIDEyNy4yOTIgMTQuNTIwNiAxMjYuODM4IDE0LjA1NjFDMTI2LjM4MyAxMy41OTQ5IDEyNi4xMzYgMTIuOTUzMyAxMjYuMTA2IDEyLjEyNzhIMTMwLjY5OEMxMzEuOTM0IDEyLjEyNzggMTMyLjkzIDExLjIyODggMTMyLjkzIDEwLjEyNTlDMTMyLjgzMyA4Ljg5OTQ1IDEzMi40MjIgNy45MTY5MSAxMzEuNyA3LjE3ODMzQzEzMC44NjUgNi4zMjI3OSAxMjkuNjk1IDUuODk1MDIgMTI4LjE5NSA1Ljg5NTAyQzEyNi42OTQgNS44OTUwMiAxMjUuMzk0IDYuMzgyOTUgMTI0LjUwNSA3LjM1MjEyQzEyMy42MTYgOC4zMjQ2MyAxMjMuMTcyIDkuNzAxNTIgMTIzLjE3MiAxMS40Nzk0QzEyMy4xNzIgMTMuMjU3NCAxMjMuNjUzIDE0LjU0NCAxMjQuNjE1IDE1LjQ4NjVDMTI1LjU3OCAxNi40Mjg5IDEyNi45MTUgMTYuOTAwMSAxMjguNjIyIDE2LjkwMDFDMTI5LjQ1MSAxNi45MDAxIDEzMC4xNTMgMTYuODQgMTMwLjczMSAxNi43MTYzQzEzMS4yOTYgMTYuNTk2IDEzMS44MjQgMTYuNDEyMiAxMzIuMzIyIDE2LjE2ODJMMTMxLjY4IDE0LjE5NjVDMTMxLjI5OSAxNC4zNDM1IDEzMC45MjggMTQuNDYzOCAxMzAuNTcxIDE0LjU0NzRWMTQuNTUwN1pNMTI2Ljc3MSA4LjU0MTg2QzEyNy4xMTggOC4xNTA4NSAxMjcuNiA3Ljk1NzAxIDEyOC4yMTUgNy45NTcwMUMxMjguODMgNy45NTcwMSAxMjkuMzE4IDguMTUwODUgMTI5LjY3OCA4LjU0MTg2QzEzMC4wMzkgOC45MzI4NyAxMzAuMjI3IDkuNDg0MjkgMTMwLjI0IDEwLjE5OTVIMTI2LjE3NkMxMjYuMjI2IDkuNDg0MjkgMTI2LjQyNyA4LjkzMjg3IDEyNi43NzQgOC41NDE4NkgxMjYuNzcxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTg0LjM3NDUgMi44NDcyMUM4NC4zMTEgMi42ODAxMSA4NC4xOTQxIDIuNTQ5NzggODQuMDUwNCAyLjQ1OTU0QzgzLjczOTYgMi4yNjU3MSA4My4zNjUzIDIuMTYyMTEgODIuOTM3NSAyLjE2MjExQzgyLjUwOTcgMi4xNjIxMSA4Mi4xMjIxIDIuMjY1NzEgODEuODI0NiAyLjQ1OTU0QzgxLjY4MDkgMi41NjMxNSA4MS41NjczIDIuNjkzNDggODEuNTAwNSAyLjg2MDU4QzgxLjQxMDIgMy4wNTQ0MSA4MS4zNzAxIDMuMjg4MzUgODEuMzcwMSAzLjU3MjQyQzgxLjM3MDEgMy44NTY0OSA4MS40MTAyIDQuMDkwNDIgODEuNTAwNSA0LjI4NDI2QzgxLjU2NCA0LjQ1MTM2IDgxLjY4MDkgNC41ODE2OSA4MS44MjQ2IDQuNjg1MjlDODIuMTIyMSA0Ljg5MjUgODIuNDk2NCA0Ljk5NjEgODIuOTM3NSA0Ljk5NjFDODMuMzc4NiA0Ljk5NjEgODMuNzM5NiA0Ljg5MjUgODQuMDUwNCA0LjY4NTI5Qzg0LjE5NDEgNC41OTUwNiA4NC4zMDc3IDQuNDY0NzIgODQuMzc0NSA0LjI5NzYzQzg0LjQ3ODEgNC4xMDM3OSA4NC41MTgyIDMuODY5ODUgODQuNTE4MiAzLjU3MjQyQzg0LjUxODIgMy4yNzQ5OCA4NC40NzgxIDMuMDQxMDUgODQuMzc0NSAyLjg0NzIxWiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTkxLjc1MzkgMTQuNTk3M0M5Mi4wNzgxIDE0LjU5NzMgOTIuMzg4OSAxNC41NjM4IDkyLjY4NjMgMTQuNTAwM0M5Mi45ODM4IDE0LjQzNjkgOTMuMjgxMiAxNC4zNiA5My41Nzg2IDE0LjI2OThWMTYuNDIyQzkzLjI2NzggMTYuNTUyMyA5Mi44ODM1IDE2LjY2MjYgOTIuNDI1NyAxNi43NTk1QzkxLjk2NzggMTYuODU2NCA5MS40NjY1IDE2LjkwNjYgOTAuOTIxOCAxNi45MDY2QzkwLjI4NjggMTYuOTA2NiA4OS43MjIgMTYuODAzIDg5LjIyNDEgMTYuNTk1OEM4OC43MjYxIDE2LjM4ODYgODguMzMxOCAxNi4wMzEgODguMDQxIDE1LjUxOTZDODcuNzUwMyAxNS4wMDgzIDg3LjYwMzIgMTQuMjk5OCA4Ny42MDMyIDEzLjM5NDJWOC4yOTA5N0g4Ni4yMjYzQzg2LjIyNjMgNy41NjU3NyA4Ni4yMjYzIDYuODQwNTYgODYuMjI2MyA2LjExNTM1SDg3LjYwMzJDODcuNjAzMiA1LjM3MDEgODcuNjAzMiA0LjYyMTUgODcuNjAzMiAzLjg3NjI0Qzg4LjU2NTcgMy44NzYyNCA4OS41MzE1IDMuODY5NTUgOTAuNDk0IDMuODY2MjFWNi4xMTUzNUg5My40NjE3VjguMjg3NjNIOTAuNDk0VjEzLjM5MDhDOTAuNDk0IDEzLjc5MTkgOTAuNjExIDE0LjA5MjYgOTAuODQxNiAxNC4yOTMxQzkxLjA3NTUgMTQuNDkzNyA5MS4zNzk2IDE0LjU5MzkgOTEuNzUzOSAxNC41OTM5VjE0LjU5NzNaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNMTAzLjMxNCA2Ljg2NDJDMTAyLjU1OCA2LjI0NTk0IDEwMS40NzIgNS45Mzg0OCAxMDAuMDU1IDUuOTM4NDhDOTguNjM4MSA1LjkzODQ4IDk3LjQ0MTcgNi4yMTI1MiA5Ni4zMDIxIDYuNzUzOTJMOTYuOTc3MiA4LjgzNTk2Qzk4LjExMzQgOC4zMjc5OCA5OS4wOTkzIDguMDczOTkgOTkuOTQxNSA4LjA3Mzk5QzEwMS4wMzggOC4wNzM5OSAxMDEuNTg2IDguNjA4NzEgMTAxLjU4NiA5LjY4MTQ4VjEwLjE0Nkw5OS43NTQzIDEwLjIwMjhDOTguMTczNiAxMC4yNTk2IDk2Ljk5MDUgMTAuNTUzNyA5Ni4yMDUyIDExLjA4NTFDOTUuNDE5OCAxMS42MTY1IDk1LjAyODggMTIuNDQ1MyA5NS4wMjg4IDEzLjU2NDhDOTUuMDI4OCAxNC42ODQ0IDk1LjMxOTYgMTUuNDU5NyA5NS45MDExIDE2LjA0MTJDOTYuNDgyNiAxNi42MTk0IDk3LjI4MTMgMTYuOTEwMiA5OC4yOTczIDE2LjkxMDJDOTkuMTIyNyAxNi45MTAyIDk5Ljc5MTEgMTYuNzkzMiAxMDAuMzA2IDE2LjU1NTlDMTAwLjczNyAxNi4zNTg3IDEwMS4xNTggMTYuMDE3OCAxMDEuNTY5IDE1LjU1NjdWMTYuNzE5N0gxMDQuNDVWOS42NzgxNEMxMDQuNDUgOC40MTgyMiAxMDQuMDcyIDcuNDc5MTIgMTAzLjMxNyA2Ljg2NDJIMTAzLjMxNFpNMTAxLjU4NiAxMi4wMzA5SDEwMS41NjlWMTIuOTA2NUMxMDEuNTI5IDEzLjQ0MTIgMTAxLjMzOCAxMy44ODIzIDEwMC45ODggMTQuMjIzMkMxMDAuNTg2IDE0LjYwNzUgMTAwLjA1NSAxNC43OTggOTkuMzg2NyAxNC43OThDOTguNDU0MyAxNC43OTggOTcuOTg5OCAxNC4zOTAzIDk3Ljk4OTggMTMuNTc4MkM5Ny45ODk4IDEzLjAxMDEgOTguMTkzNiAxMi41ODkgOTguNjA0NyAxMi4zMTE2Qzk5LjAxNTggMTIuMDM0MiA5OS42Mzc0IDExLjg4MzggMTAwLjQ3NiAxMS44NTcxTDEwMS41OTIgMTEuODIwM1YxMi4wMjc1TDEwMS41ODYgMTIuMDMwOVoiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik03MC40NTIxIDE1LjkwNzNDNzEuMDkwNSAxNi41NzIzIDcyLjAyMjkgMTYuOTA2NSA3My4yNTI3IDE2LjkwNjVDNzMuOTcxMiAxNi45MDY1IDc0LjYxMjkgMTYuNzc2MiA3NS4xODEgMTYuNTE1NUM3NS42ODIzIDE2LjI4NDkgNzYuMDggMTUuOTQ3NCA3Ni4zOTA4IDE1LjUxOTZWMTYuNzA5M0g3OS4yNzQ5VjEyLjIyNzhINzkuMjY4MlY2LjExODY1SDc2LjM4MDhWMTEuMDk4MkM3Ni4zODA4IDEyLjM0ODEgNzYuMjAwMyAxMy4yNDM3IDc1LjgzOTQgMTMuNzgxOEM3NS40ODE4IDE0LjMyMzIgNzQuODkzNiAxNC41OTA1IDc0LjA4ODIgMTQuNTkwNUM3My40OTY3IDE0LjU5MDUgNzMuMDYyMiAxNC40IDcyLjc5MTUgMTQuMDE5MUM3Mi41MjA4IDEzLjYzODEgNzIuMzgzOCAxMy4wNjMzIDcyLjM4MzggMTIuMzAxM1Y2LjEyMTk5SDY5LjQ5NjNWMTMuMDIzMkM2OS40OTYzIDE0LjI3OTcgNjkuODEzOCAxNS4yMzg5IDcwLjQ1MjEgMTUuOTA3M1oiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik02Ny40MjQzIDYuMTA1MzhINjQuNTQ2OVY3LjMwMThDNjQuMTk2IDYuODUwNjQgNjMuNzk4MyA2LjUxMzEgNjMuMzUwNSA2LjI4NTg1QzYyLjg1MjUgNi4wMzE4NiA2Mi4yNjc3IDUuOTA4MiA2MS41OTkzIDUuOTA4MkM2MC4zNDI3IDUuOTA4MiA1OS4zNTM1IDYuMzk2MTMgNTguNjMxNiA3LjM2NTNDNTcuOTA5OCA4LjMzNzgxIDU3LjU0ODggOS42ODc5NyA1Ny41NDg4IDExLjQxOTFDNTcuNTQ4OCAxMy4xNTAyIDU3LjkwMzEgMTQuNDc3IDU4LjYwODIgMTUuNDM5NUM1OS4zMTY3IDE2LjQwMiA2MC4yOTI2IDE2Ljg4MzIgNjEuNTQyNSAxNi44ODMyQzYyLjIxMDkgMTYuODgzMiA2Mi44MDI0IDE2Ljc0OTUgNjMuMzEzNyAxNi40ODU1QzYzLjgyNSAxNi4yMjE1IDY0LjIzNjEgMTUuODMzOCA2NC41NDM2IDE1LjMxOTJINjQuNTQ2OVYxNi43MDYxQzY0LjU0NjkgMTYuNzc2MyA2NC41NDM2IDE2Ljg0MzEgNjQuNTQzNiAxNi45MDY2VjE5LjIwMjVDNjQuNjMzOCAyMC4zNjg5IDY1LjU3NjIgMjEuMjk0NiA2Ni43NTI2IDIxLjM0ODFINjcuNDQxMVY2LjEwNTM4SDY3LjQyNDNaTTY0LjE4NiAxMy45OTI0QzYzLjg0NTEgMTQuNDEzNSA2My4zMDcgMTQuNjI0MSA2Mi41NzUxIDE0LjYyNDFDNjEuODQzMyAxNC42MjQxIDYxLjMzNTMgMTQuMzYzNCA2MC45OTc3IDEzLjgzODdDNjAuNjYwMiAxMy4zMTQgNjAuNDg5OCAxMi41MjIgNjAuNDg5OCAxMS40NjI2QzYwLjQ4OTggOS4zMjcwMyA2MS4xNjgyIDguMjYwOTUgNjIuNTI1IDguMjYwOTVDNjMuMzAwNCA4LjI2MDk1IDYzLjg2NTEgOC41MDgyNSA2NC4yMTYxIDguOTk5NTJDNjQuMzUzMSA5LjE5MzM2IDY0LjQ2MzQgOS40MzczMiA2NC41NDY5IDkuNzMxNDFWMTMuMjQwNUM2NC40NTY3IDEzLjU1MTMgNjQuMzM2NCAxMy44MDg2IDY0LjE4NiAxMy45OTU4VjEzLjk5MjRaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNNTQuMDczMSA1LjQ4MDU0QzU1LjI4OTYgNS40NDcxMiA1Ni4yNzIxIDQuNDg0NjQgNTYuMzM4OSAzLjI3ODE5VjMuMDU3NjJINDkuMDMzNEM0Ny43NjY4IDMuMDgxMDEgNDYuNzQ3NSA0LjExMzY4IDQ2Ljc0NDEgNS4zODY5N1YxNi45MDY3SDU0LjA3MzFDNTUuMjg5NiAxNi44NzMzIDU2LjI3MjEgMTUuOTEwOCA1Ni4zMzg5IDE0LjcwNDRWMTQuNTAwNUg0OS42ODE3VjExLjIyMkg1My43MzIyQzU0LjkzODYgMTEuMTg1MyA1NS45MTQ1IDEwLjIzMjggNTUuOTg4IDkuMDM2NFY4LjgxNTgzSDQ5LjY4MTdWNS40ODA1NEg1NC4wNzY0SDU0LjA3MzFaIiBmaWxsPSJibGFjayIvPgo8cGF0aCBkPSJNODQuMzcxNSA2LjMxMjVIODEuNTAwN1YxNi45MDY1SDg0LjM3MTVWNi4zMTI1WiIgZmlsbD0iYmxhY2siLz4KPHBhdGggZD0iTTEyMS4zMTcgMi4xNjIxMUgxMTguNDQ2VjE2LjkwNjlIMTIxLjMxN1YyLjE2MjExWiIgZmlsbD0iYmxhY2siLz4KPC9zdmc+Cg==" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 px-5 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-medium" aria-current="page" href="#">Dashboard</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <button class="btn fs-5"><i class="fa-regular fa-bell"></i></button>
+                        <div class="user-dropdown dropdown">
+                            <button class="btn dropdown-toggle" type="button" id="userDropdown"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="initial">KD</i> <span>Kartik Dhadulk</span>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                                <li><a class="dropdown-item" href="#">Profile</a></li>
+                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </nav>
+    </header>
+    <main class="container">
+        <div class="page-breadcrumb">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">Dashboard</li>
+                    <li class="breadcrumb-item" aria-current="page">Deal ID #203945</li>
+                    <li class="breadcrumb-item active" aria-current="page">Upload Documents</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="page-heading-container d-flex align-items-center justify-content-between">
+            <h2 class="fw-semibold mb-0">Upload Documents</h2>
+            <div class="deal-progress spacing-0 bg-transparent">
+                <div class="progress">
+                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100" style="width: 30%"></div>
+                </div>
+                <p class="text-primary me-4">3 of 10 documents Uploaded</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-3 col-md-3 gap-3 sticky-scroll">
+                <div class="deal-intro d-flex flex-column gap-3">
+                    <div>
+                        <h4>#203945</h4>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="deal-intro-item">
+                                    <p class="intro-label">Company</p>
+                                    <p class="intro-value">CFG Bacon Construction</p>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="deal-intro-item">
+                                    <p class="intro-label">Loan Amount</p>
+                                    <p class="intro-value">$2,500,000</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="deal-intro-details">
+                        <div class="row gap-3">
+                            <div class="col-12">
+                                <div
+                                    class="deal-intro-item d-lg-flex d-block align-items-lg-center justify-content-lg-between">
+                                    <p class="intro-label">Property</p>
+                                    <p class="intro-value">123 Main St, Anytown</p>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div
+                                    class="deal-intro-item d-lg-flex d-block align-items-lg-center justify-content-lg-between">
+                                    <p class="intro-label">Status</p>
+                                    <p class="intro-badge">Pre-underwriting</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div
+                                class="deal-intro-item d-lg-flex d-block align-items-lg-center justify-content-lg-between">
+                                <p class="intro-label">Underwriter</p>
+                                <p class="intro-value">John Smith</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="deal-sharing">
+                    <div class="heading d-flex align-items-center justify-content-between">
+                        <h5>Shared with</h5>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modalRequest">+ Request to invite</a>
+                    </div>
+                    <div class="sharing-list">
+                        <div class="list-item">
+                            <div class="avatar">PS</div>
+                            <div class="share-item-details">
+                                <h4>Preet Singh</h4>
+                                <p>preet.singh@gmail.com</p>
+                            </div>
+                            <div class="badge badge-light ml-auto">Invited</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="avatar">KD</div>
+                            <div class="share-item-details">
+                                <h4>Kartik Dhaduk</h4>
+                                <p>kartik@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="list-item">
+                            <div class="avatar">cd</div>
+                            <div class="share-item-details">
+                                <h4>Conor DiViesti</h4>
+                                <p>conor@gmail.com</p>
+                            </div>
+                            <div class="badge badge-light ml-auto">Requested</div>
+                        </div>
+                        <div class="list-item">
+                            <div class="avatar">cd</div>
+                            <div class="share-item-details">
+                                <h4>Timothy Li</h4>
+                                <p>timothy.li@abc.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-9 col-md-9">
+                <div class="document-upload-container">
+                    <div class="container-heading">
+                        <h6>Documents required</h6><span>Due: Aug 29, 2025</span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-5 col-md-6">
+                            <div class="document-upload-list">
+                                <div class="document-upload-item active">
+                                    <p class="text-truncate">Appraisals / Land Appraisals / Feasibility Report</p>
+                                    <div class="badge badge-light">Document submitted on 2023-01-10</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Environmental Site Assessment / Building Condition Report
+                                    </p>
+                                    <div class="badge badge-warning">Pending review</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Quantity Surveyor Report/Geotechnical Report</p>
+                                    <div class="badge badge-success">All documents received</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Commitment Letters</p>
+                                    <div class="badge badge-warning">Awaiting signatures</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Operating Statements/Rent Rolls</p>
+                                    <div class="badge badge-success">Uploaded Successfully</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Leases / Tenant Acknowledgements / Estoppel </p>
+                                    <div class="badge badge-light">In progress</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">PNWs / Mortgage Apps / Liquidity Verifications</p>
+                                    <div class="badge badge-light">Additional info required</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Real Estate Portfolios / Asset Verifications</p>
+                                    <div class="badge badge-light">Review completed</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Credit Bureau</p>
+                                    <div class="badge badge-light">Reports generated</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">KYC/Income/occupation/employment details documents/org
+                                        chart</p>
+                                    <div class="badge badge-light">Final check pending</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Operating Statements/Rent Rolls</p>
+                                    <div class="badge badge-success">Uploaded Successfully</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Leases / Tenant Acknowledgements / Estoppel </p>
+                                    <div class="badge badge-light">In progress</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">PNWs / Mortgage Apps / Liquidity Verifications</p>
+                                    <div class="badge badge-light">Additional info required</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Real Estate Portfolios / Asset Verifications</p>
+                                    <div class="badge badge-light">Review completed</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                                <div class="document-upload-item">
+                                    <p class="text-truncate">Credit Bureau</p>
+                                    <div class="badge badge-light">Reports generated</div>
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-7 col-md-6 sticky-scroll">
+                            <div class="document-upload-section">
+                                <h5 class="upload-heading">Appraisals / Land Appraisals / Feasibility Report</h5>
+                                <p class="upload-description">Please provide a full MAI appraisal including income
+                                    approach. Must be dated within last 6 months</p>
+                                <div class="uploading-section">
+                                    <div class="file-upload-box">
+                                        <div class="upload-label">
+                                            <div class="upload-icon">
+                                                <i class="upload-icon-svg"></i>
+                                            </div>
+                                            <div class="upload-label-detail">
+                                                <p>Choose a file or drag & drop it here.</p>
+                                                <span>PDF or DOC up to 2 MB.</span>
+                                            </div>
+                                        </div>
+                                        <div class="upload-button">
+                                            <input type="file" id="fileUpload" multiple hidden>
+                                            <label for="fileUpload" class="btn">Browse
+                                                file</label>
+                                        </div>
+                                    </div>
+                                    <div class="row file-uploaded-list row-gap-2">
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf">
+                                                <p class="text-truncate">New documents uploading</p>
+                                                <span>PDF</span>
+                                            </div>
+                                            </ul>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf">
+                                                <p class="text-truncate">New documents uploading</p>
+                                                <span>PDF</span>
+                                            </div>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="uploaded-document-list">
+                                    <h6><span>Previously Uploaded (7)</span></h6>
+                                    <div class="row uploaded-file-list row-gap-2">
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <div class="file-detail pdf uploaded">
+                                                <p class="text-truncate">Appraisal Report - CFG Bacon Construction.pdf
+                                                </p>
+                                                <span>PDF</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="upload-submit-button d-grid">
+                                    <button class="btn btn-primary rounded-pill">Upload and submit new
+                                        documents</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal" id="modalRequest" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-lg request-modal">
+                <div class="modal-content">
+                    <div class="modal-header flex-column align-items-start">
+                        <h2 class="modal-title">Request admin to invite</h2>
+                        <p>An administrator will review your request to add this people and grant access upon approval.
+                        </p>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-banner info">
+                            <p>The entered email does not match with the other entries you've entered with name and job
+                                title.</p>
+                        </div>
+                        <div class="request-form">
+                            <form class="row needs-validation row-gap-3" novalidate>
+                                <div class="col-12 col-md-6">
+                                    <label for="firstname" class="form-label">Firstname</label>
+                                    <input type="text" id="firstname" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid firstname.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="lastname" class="form-label">Lastname</label>
+                                    <input type="text" id="lastname" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid lastname.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="firstname" class="form-label">Job Title</label>
+                                    <input type="text" id="firstname" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Please enter a valid job title.
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        <i class="fa-solid fa-circle-info"></i> Please enter a valid email.
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="modal-footer justify-content-start">
+                        <button type="submit" class="btn btn-primary">Request</button>
+                        <button type="button" class="btn btn-link text-decoration-none"
+                            data-bs-dismiss="modal">Cancel</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
